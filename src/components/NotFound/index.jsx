@@ -1,6 +1,6 @@
 import React from 'react';
 
-NotFound.propsType = {}
+NotFound.propTypes = {}
 
 function NotFound() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-AddEditPage.propsType = {}
+AddEditPage.propTypes = {}
 
 function AddEditPage() {
   return (

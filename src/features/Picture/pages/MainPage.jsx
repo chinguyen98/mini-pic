@@ -1,6 +1,6 @@
 import React from 'react';
 
-MainPage.propsType = {}
+MainPage.propTypes = {}
 
 function MainPage() {
   return (

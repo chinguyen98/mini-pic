@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import './header.scss';
 
-Header.propsType = {};
+Header.propTypes = {};
 
 function Header() {
   return (

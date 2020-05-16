@@ -4,7 +4,7 @@ import MainPage from './pages/MainPage';
 import AddEditPage from './pages/AddEditPage';
 import NotFound from '../../components/NotFound';
 
-Picture.propsType = {}
+Picture.propTypes = {}
 
 function Picture() {
   const match = useRouteMatch();
