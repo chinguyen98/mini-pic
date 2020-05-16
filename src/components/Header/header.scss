@@ -1,0 +1,21 @@
+.header{
+  padding: 1rem 0;
+  font-size: 2rem;
+  background-color: black;
+  
+  &__title{
+    font-weight: bolder;
+  }
+
+  &__link{
+    color: blue;
+    transition: all 0.25s ease-in-out;
+    text-decoration: none;
+
+    &--active,
+    &:hover{
+      text-decoration: none;
+      color: deeppink;
+    }
+  }
+}
