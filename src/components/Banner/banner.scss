@@ -1,0 +1,15 @@
+.banner{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  
+  background-image: url(../../assets/images/leaf.jpeg);
+  background-position: center;
+  background-size: cover;
+
+  &__title{
+    color: deeppink;
+    font-weight: bolder;
+  }
+}

@@ -1,11 +1,13 @@
 import React from 'react';
+import Banner from '../../../components/Banner';
+import images from '../../../constants/images';
 
 AddEditPage.propTypes = {}
 
 function AddEditPage() {
   return (
     <div>
-      <h1>add edit page</h1>
+      <Banner backgroundUrl={images.image1_BG} title='Add Edit Pic'></Banner>
     </div>
   )
 }

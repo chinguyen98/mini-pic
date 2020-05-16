@@ -1,11 +1,18 @@
 import React from 'react';
+import { Container } from 'reactstrap';
+import Banner from '../../../components/Banner';
+import images from '../../../constants/images';
+import { Link } from 'react-router-dom';
 
 MainPage.propTypes = {}
 
 function MainPage() {
   return (
     <div>
-      <h1>main page</h1>
+      <Banner backgroundUrl={images.imageLeft_BG} title='WELCOME'></Banner>
+      <Container className='text-center'>
+        <Link className='btn btn-primary mt-2' to='/pics/add'>Add new awesome Picture</Link>
+      </Container>
     </div>
   )
 }
