@@ -1,8 +1,8 @@
 import React from 'react';
-import Banner from '../../../components/Banner';
-import images from '../../../constants/images';
-import PhotoForm from '../components/PhotoForm';
 import { Container } from 'reactstrap';
+import Banner from 'components/Banner';
+import images from 'constants/images';
+import PhotoForm from '../components/PhotoForm';
 
 AddEditPage.propTypes = {}
 
