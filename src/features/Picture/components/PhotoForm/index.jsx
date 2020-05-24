@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Formik, Form, FastField } from 'formik';
-import { FormGroup, Label, Button } from 'reactstrap';
 import { PHOTO_CATEGORY_OPTIONS } from 'constants/global';
-import images from 'constants/images';
 import InputField from 'custom-fields/InputField';
 import SelectField from 'custom-fields/SelectField';
+import RandomPhotoField from 'custom-fields/RandomPhotoField';
 
 PhotoForm.propTypes = {
   onSubmit: PropTypes.func,
@@ -38,6 +37,7 @@ function PhotoForm() {
               label='Title'
               placeholder='Pic title...'
             />
+
             <FastField
               name='category'
               component={SelectField}
@@ -47,15 +47,11 @@ function PhotoForm() {
               options={PHOTO_CATEGORY_OPTIONS}
             />
 
-
-            <FormGroup>
-              <Label for='randomPhotoBtn'>Photo</Label><br />
-              <Button type='button' outline color='primary'>Random a photo</Button><br />
-              <img src={images.image2_BG} alt="randomImg" width='200px' height='200px' />
-            </FormGroup>
-            <FormGroup>
-              <Button type='submit' color='primary'>Add photo</Button>
-            </FormGroup>
+            <FastField
+              name='photo'
+              component={RandomPhotoField}
+              label='Photo'
+            />
           </Form>
         )
       }}
